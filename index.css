@@ -1,0 +1,43 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header
+{
+    position: fixed;
+    width: 100%;
+    padding: 30px;
+    background: black;
+    z-index: 1000px;
+}
+
+.nav a
+{
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 22px;
+    padding: 20px;
+    left: 65%;
+}
+
+.nav a:first-child
+{
+    position: inherit;
+    left: 2%;
+    color: #7bb1ff;
+    font-size: 32px;
+}
+
+
+
+
+
+.secod-section
+{
+    width: 100%;
+    height: 1200px;
+}

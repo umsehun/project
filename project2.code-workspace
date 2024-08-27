@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../project"
+		},
+		{
+			"path": "../web-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "project2",
+		"git.ignoreLimitWarning": true
+	}
+}

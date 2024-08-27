@@ -42,7 +42,7 @@ html
 {
     border: none;
     background: none;
-    opacity: 100;
+    opacity: 1;
 }
 
 .nav a:hover
@@ -52,6 +52,12 @@ html
     color: #415776;
     border-radius: 20px;
     width: 10PX;
+}
+
+section
+{
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 .s-1
@@ -90,7 +96,7 @@ html
     height: 1200px;
 }
 
-.foter
+.footer
 {
     background-color: black;
     width: 100%;

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intersection Observer Example</title>
+    <style>
+        section {
+            height: 100vh; /* 각 section의 높이를 100vh로 설정 */
+            opacity: 0; /* 초기 상태를 0으로 설정 */
+            transition: opacity 0.5s; /* 부드러운 전환 효과 */
+            background-color: lightblue; /* 배경색 추가 */
+        }
+    </style>
+</head>
+<body>
+
+<section>박스 1</section>
+<section>박스 2</section>
+<section>박스 3</section>
+<section>박스 4</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const sections = document.querySelectorAll('section');
+
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1; // 요소가 보일 때 opacity를 1로 설정
+                    observer.unobserve(entry.target); // 더 이상 관찰하지 않음
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section); // 각 section을 관찰
+        });
+    });
+</script>
+
+</body>
+</html>

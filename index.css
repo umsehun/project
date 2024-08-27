@@ -54,11 +54,6 @@ html
     width: 10PX;
 }
 
-section
-{
-    opacity: 0;
-    transition: opacity 0.5s;
-}
 
 .s-1
 {

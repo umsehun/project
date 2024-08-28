@@ -99,9 +99,25 @@ html
 }
 
 
+.side-menu
+{
+    cursor: pointer;
+
+}
+
 .aside
 {
-    display: none;
+    position: relative;
+    background-color: red;
+    height: 100%;
+    
+    
+}
+
+.header:hover + .aside
+
+{
+    display: block;
 }
 
 @media (max-width:768px)
@@ -120,17 +136,19 @@ html
     {
         display: block;
         position: absolute;
-        font-size: 22px;
-        margin-top: -25px;
-        margin-left: -10px;
+        font-size: 40px;
+        margin-top: -35px;
+        margin-left: -30px;
         font-size: 20px;
         font-weight: 700;
+        float: left;
     }
 
-    .header > .aside
+    .side-menu
     {
+        position: relative;
         display: block;
+        transform: translateX(90%);
+        top: 0.5%;
     }
-    
-
 }

@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    overflow: hidden; /* 기본 스크롤 숨기기 */
+}
+
+.section {
+    height: 100vh; /* 각 섹션의 높이를 100vh로 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: white;
+}
